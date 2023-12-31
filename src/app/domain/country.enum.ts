@@ -1,7 +1,7 @@
 export enum Country {
-  ENGLAND,
-  SPAIN,
-  FRANCE,
-  GERMANY,
-  ITALY
+  ENGLAND = "england",
+  SPAIN = "spain",
+  FRANCE = "france",
+  GERMANY = "germany",
+  ITALY = "italy"
 }

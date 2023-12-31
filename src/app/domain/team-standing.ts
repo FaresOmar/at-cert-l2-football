@@ -5,5 +5,8 @@ export interface TeamStanding {
   played: number;
   win: number;
   lose: number;
-  logo: number;
+  draw: number;
+  logo: string;
+  goalsDiff: number;
+  points: number;
 }

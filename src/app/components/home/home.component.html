@@ -1,0 +1,6 @@
+<ul class="nav nav-pills">
+  <li class="nav-item" *ngFor="let country of countries">
+    <a class="nav-link" [routerLink]="['/countries', country]" routerLinkActive="active" [id]="country + 'Select'">{{ country | titlecase }}</a>
+  </li>
+</ul>
+<app-standing></app-standing>

@@ -1,0 +1,15 @@
+<button type="button" class="btn btn-primary" (click)="navigateToLeague()">Back</button>
+<table class="table" *ngIf="teamMatches">
+  <tbody>
+    <tr *ngFor="let match of teamMatches">
+      <td><img [src]="match.homeTeam.logo" alt="Home team logo" width="25" height="25"></td>
+      <th>{{match.homeTeam.name}}</th>
+      <th>{{match.homeTeam.goals}}</th>
+      <th>-</th>
+      <th>{{match.awayTeam.name}}</th>
+      <th>{{match.awayTeam.goals}}</th>
+      <td><img [src]="match.awayTeam.logo" alt="Away team logo" width="25" height="25"></td>
+    </tr>
+  </tbody>
+</table>
+

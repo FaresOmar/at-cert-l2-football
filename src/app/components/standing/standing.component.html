@@ -1,0 +1,28 @@
+<table class="table" *ngIf="leagueStanding">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col"></th>
+      <th scope="col">Name</th>
+      <th scope="col">Games</th>
+      <th scope="col">W</th>
+      <th scope="col">L</th>
+      <th scope="col">D</th>
+      <th scope="col">Goal Difference</th>
+      <th scope="col">Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let teamStanding of leagueStanding">
+      <th scope="row">{{teamStanding.rank}}</th>
+      <td><img [src]="teamStanding.logo" alt="Team logo" width="25" height="25"></td>
+      <td><a [routerLink]="['/countries', country, 'teams', teamStanding.teamId]">{{teamStanding.name}}</a></td>
+      <th>{{teamStanding.played}}</th>
+      <th>{{teamStanding.win}}</th>
+      <th>{{teamStanding.lose}}</th>
+      <th>{{teamStanding.draw}}</th>
+      <th>{{teamStanding.goalsDiff}}</th>
+      <th>{{teamStanding.points}}</th>
+    </tr>
+  </tbody>
+</table>
